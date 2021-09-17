@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rPX-2D-Umx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85R-yp-7Gu">
+                                <rect key="frame" x="107" y="425" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="85R-yp-7Gu" secondAttribute="height" multiplier="2:1" id="NkL-I2-kbk"/>
+                                </constraints>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gO7-lS-9Af"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8T-R1-xB5">
+                                <rect key="frame" x="107" y="575" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="X8T-R1-xB5" secondAttribute="height" multiplier="2:1" id="cGa-sx-7Jb"/>
+                                </constraints>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QaF-zN-2fz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JH0-jF-1F6">
+                                <rect key="frame" x="107" y="274" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JH0-jF-1F6" secondAttribute="height" multiplier="2:1" id="4iW-ZM-At8"/>
+                                </constraints>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1h4-97-1T2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JH0-jF-1F6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1qc-KG-5i9"/>
+                            <constraint firstItem="85R-yp-7Gu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="59x-ff-o8a"/>
+                            <constraint firstItem="85R-yp-7Gu" firstAttribute="top" relation="greaterThanOrEqual" secondItem="JH0-jF-1F6" secondAttribute="bottom" constant="10" id="C0C-Xu-wpi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="X8T-R1-xB5" secondAttribute="bottom" constant="20" id="K5A-FN-IdQ"/>
+                            <constraint firstItem="JH0-jF-1F6" firstAttribute="height" secondItem="85R-yp-7Gu" secondAttribute="height" id="VIX-9Y-JRD"/>
+                            <constraint firstItem="85R-yp-7Gu" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ZXz-yN-ay9"/>
+                            <constraint firstItem="85R-yp-7Gu" firstAttribute="height" secondItem="X8T-R1-xB5" secondAttribute="height" id="gd6-ZV-D0c"/>
+                            <constraint firstItem="X8T-R1-xB5" firstAttribute="top" relation="greaterThanOrEqual" secondItem="85R-yp-7Gu" secondAttribute="bottom" constant="10" id="jPb-a8-xIU"/>
+                            <constraint firstItem="X8T-R1-xB5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yz8-eB-FNY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4ht-2h-EXx"/>
+                    <connections>
+                        <outlet property="button1" destination="JH0-jF-1F6" id="Aqc-px-jhm"/>
+                        <outlet property="button2" destination="85R-yp-7Gu" id="Pmc-LT-HKT"/>
+                        <outlet property="button3" destination="X8T-R1-xB5" id="7Lw-cj-xwQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3P2-p0-bbK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rPX-2D-Umx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DsP-DZ-BXR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="R02-b3-zgx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SWI-cG-5mj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="us" width="200" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
