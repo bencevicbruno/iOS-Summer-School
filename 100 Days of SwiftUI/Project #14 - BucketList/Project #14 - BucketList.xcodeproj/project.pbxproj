@@ -9,21 +9,47 @@
 /* Begin PBXBuildFile section */
 		156C9CD8270315EF0093A298 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C9CD7270315EF0093A298 /* AppDelegate.swift */; };
 		156C9CDA270315EF0093A298 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C9CD9270315EF0093A298 /* SceneDelegate.swift */; };
-		156C9CDC270315EF0093A298 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C9CDB270315EF0093A298 /* ContentView.swift */; };
+		156C9CDC270315EF0093A298 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C9CDB270315EF0093A298 /* MainView.swift */; };
 		156C9CDE270315F20093A298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 156C9CDD270315F20093A298 /* Assets.xcassets */; };
 		156C9CE1270315F20093A298 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 156C9CE0270315F20093A298 /* Preview Assets.xcassets */; };
 		156C9CE4270315F20093A298 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 156C9CE2270315F20093A298 /* LaunchScreen.storyboard */; };
+		156C9CEC2703196E0093A298 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C9CEB2703196E0093A298 /* MapView.swift */; };
+		156C9CEE270327370093A298 /* MKPointAnnotationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C9CED270327370093A298 /* MKPointAnnotationExtension.swift */; };
+		156C9CF227032BA00093A298 /* EditAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C9CF127032BA00093A298 /* EditAnnotationView.swift */; };
+		156C9CF427032F6F0093A298 /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C9CF327032F6F0093A298 /* FileManagerExtensions.swift */; };
+		156C9CF6270336A50093A298 /* WikipediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C9CF5270336A50093A298 /* WikipediaService.swift */; };
+		156C9CF9270339800093A298 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C9CF8270339800093A298 /* AuthenticationService.swift */; };
+		156C9CFC27033CE90093A298 /* AppDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C9CFB27033CE90093A298 /* AppDataService.swift */; };
+		156C9CFF270340CE0093A298 /* LoadingEditAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C9CFE270340CE0093A298 /* LoadingEditAnnotationView.swift */; };
+		156C9D01270340FF0093A298 /* FailedEditAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C9D00270340FF0093A298 /* FailedEditAnnotationView.swift */; };
+		156C9D032703417A0093A298 /* LoadedEditAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C9D022703417A0093A298 /* LoadedEditAnnotationView.swift */; };
+		156C9D07270343330093A298 /* UnlockButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C9D06270343330093A298 /* UnlockButtonView.swift */; };
+		156C9D09270343910093A298 /* LocationMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C9D08270343910093A298 /* LocationMarkerView.swift */; };
+		156C9D0B270344910093A298 /* AddAnnotationButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C9D0A270344910093A298 /* AddAnnotationButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		156C9CD4270315EF0093A298 /* Project #14 - BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project #14 - BucketList.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		156C9CD7270315EF0093A298 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		156C9CD9270315EF0093A298 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		156C9CDB270315EF0093A298 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		156C9CDB270315EF0093A298 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		156C9CDD270315F20093A298 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		156C9CE0270315F20093A298 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		156C9CE3270315F20093A298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		156C9CE5270315F20093A298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		156C9CEB2703196E0093A298 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		156C9CED270327370093A298 /* MKPointAnnotationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKPointAnnotationExtension.swift; sourceTree = "<group>"; };
+		156C9CF127032BA00093A298 /* EditAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAnnotationView.swift; sourceTree = "<group>"; };
+		156C9CF327032F6F0093A298 /* FileManagerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtensions.swift; sourceTree = "<group>"; };
+		156C9CF5270336A50093A298 /* WikipediaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaService.swift; sourceTree = "<group>"; };
+		156C9CF8270339800093A298 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		156C9CFB27033CE90093A298 /* AppDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataService.swift; sourceTree = "<group>"; };
+		156C9CFE270340CE0093A298 /* LoadingEditAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingEditAnnotationView.swift; sourceTree = "<group>"; };
+		156C9D00270340FF0093A298 /* FailedEditAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailedEditAnnotationView.swift; sourceTree = "<group>"; };
+		156C9D022703417A0093A298 /* LoadedEditAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadedEditAnnotationView.swift; sourceTree = "<group>"; };
+		156C9D06270343330093A298 /* UnlockButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockButtonView.swift; sourceTree = "<group>"; };
+		156C9D08270343910093A298 /* LocationMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMarkerView.swift; sourceTree = "<group>"; };
+		156C9D0A270344910093A298 /* AddAnnotationButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAnnotationButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +84,9 @@
 			children = (
 				156C9CD7270315EF0093A298 /* AppDelegate.swift */,
 				156C9CD9270315EF0093A298 /* SceneDelegate.swift */,
-				156C9CDB270315EF0093A298 /* ContentView.swift */,
+				156C9CFA27033C2F0093A298 /* Extensions */,
+				156C9D04270342E50093A298 /* UI */,
+				156C9CF7270336A70093A298 /* Services */,
 				156C9CDD270315F20093A298 /* Assets.xcassets */,
 				156C9CE2270315F20093A298 /* LaunchScreen.storyboard */,
 				156C9CE5270315F20093A298 /* Info.plist */,
@@ -73,6 +101,57 @@
 				156C9CE0270315F20093A298 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		156C9CF7270336A70093A298 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				156C9CFB27033CE90093A298 /* AppDataService.swift */,
+				156C9CF8270339800093A298 /* AuthenticationService.swift */,
+				156C9CF5270336A50093A298 /* WikipediaService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		156C9CFA27033C2F0093A298 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				156C9CF327032F6F0093A298 /* FileManagerExtensions.swift */,
+				156C9CED270327370093A298 /* MKPointAnnotationExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		156C9CFD27033FF70093A298 /* EditAnnotationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				156C9CF127032BA00093A298 /* EditAnnotationView.swift */,
+				156C9D022703417A0093A298 /* LoadedEditAnnotationView.swift */,
+				156C9D00270340FF0093A298 /* FailedEditAnnotationView.swift */,
+				156C9CFE270340CE0093A298 /* LoadingEditAnnotationView.swift */,
+			);
+			path = EditAnnotationScreen;
+			sourceTree = "<group>";
+		};
+		156C9D04270342E50093A298 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				156C9D05270342FC0093A298 /* MainScreen */,
+				156C9CFD27033FF70093A298 /* EditAnnotationScreen */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		156C9D05270342FC0093A298 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				156C9CDB270315EF0093A298 /* MainView.swift */,
+				156C9D0A270344910093A298 /* AddAnnotationButtonView.swift */,
+				156C9D06270343330093A298 /* UnlockButtonView.swift */,
+				156C9D08270343910093A298 /* LocationMarkerView.swift */,
+				156C9CEB2703196E0093A298 /* MapView.swift */,
+			);
+			path = MainScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +224,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				156C9CF6270336A50093A298 /* WikipediaService.swift in Sources */,
 				156C9CD8270315EF0093A298 /* AppDelegate.swift in Sources */,
+				156C9CF427032F6F0093A298 /* FileManagerExtensions.swift in Sources */,
+				156C9CF9270339800093A298 /* AuthenticationService.swift in Sources */,
+				156C9CEC2703196E0093A298 /* MapView.swift in Sources */,
+				156C9CFF270340CE0093A298 /* LoadingEditAnnotationView.swift in Sources */,
+				156C9D0B270344910093A298 /* AddAnnotationButtonView.swift in Sources */,
+				156C9D032703417A0093A298 /* LoadedEditAnnotationView.swift in Sources */,
+				156C9D01270340FF0093A298 /* FailedEditAnnotationView.swift in Sources */,
 				156C9CDA270315EF0093A298 /* SceneDelegate.swift in Sources */,
-				156C9CDC270315EF0093A298 /* ContentView.swift in Sources */,
+				156C9CF227032BA00093A298 /* EditAnnotationView.swift in Sources */,
+				156C9CFC27033CE90093A298 /* AppDataService.swift in Sources */,
+				156C9CEE270327370093A298 /* MKPointAnnotationExtension.swift in Sources */,
+				156C9CDC270315EF0093A298 /* MainView.swift in Sources */,
+				156C9D07270343330093A298 /* UnlockButtonView.swift in Sources */,
+				156C9D09270343910093A298 /* LocationMarkerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

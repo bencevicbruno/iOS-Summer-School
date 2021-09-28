@@ -9,9 +9,8 @@ import Foundation
 import MapKit
 
 extension MKPointAnnotation: ObservableObject {
-    // wrapped values not published
-    // we're not showing these properties, rather editing them
-    
+    // Wrapped values are not published
+    // We're not showing these properties, rather editing them
     public var wrappedTitle: String {
         get {
             self.title ?? "Unknown value"
@@ -33,10 +32,10 @@ extension MKPointAnnotation: ObservableObject {
     }
 }
 
-// to make MkPointAnnotation codable
-// 1) make subclass
+// Ways to make MkPointAnnotation codable:
+// 1) make a subclass
 // 2) make struct wrapper
-// 3) create your own PointAnnotation, since MKAnnotation is a protocol
+// 3) create custom PointAnnotation implementing MKAnnotation protocol
 
 class CodableMKPointAnnotation: MKPointAnnotation, Codable {
     enum CodingKeys: CodingKey {

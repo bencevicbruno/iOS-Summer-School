@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  Project #14 - BucketList
+//  Project #15 - VoiceOver
 //
 //  Created by Bruno Benčević on 9/28/21.
 //
@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let contentView = MainView()
+        let contentView = ContentView()
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

@@ -66,7 +66,7 @@ extension MainView {
         authService.authenticate {
             self.isUnlocked = true
         } onFail: { errorMessage in
-            print(errorMessage)
+            print("Authentication failed: \(errorMessage)")
         }
     }
     

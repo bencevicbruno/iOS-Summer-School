@@ -14,17 +14,17 @@ class AuthenticationService {
         var error: NSError?
         
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-            let reason = "We need to steal, no, unlock your data.\nMessage provided by Facebook"
+            let reason = "We need to steal, no, unlock your data.\nMessage provided by Facebook :)"
             
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authError in
                 if success {
                     onSuccess()
                 } else {
-                    onFail("Biometric Authentication failed!")
+                    onFail(authError?.localizedDescription ?? "Unknown error.")
                 }
             }
         } else {
-            onFail("Requesting Biometric Authentication failed!")
+            onFail(error?.localizedDescription ?? "Unknown error.")
         }
     }
 }
