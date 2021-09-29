@@ -34,7 +34,6 @@ struct UserDetailView: View {
                             label: {
                                 UserCellView(user: friend)
                             })
-                        
                     }
                 }
             }

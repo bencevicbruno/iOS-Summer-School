@@ -35,6 +35,8 @@ struct MainView: View {
             .navigationBarTitle("Friends")
         }
         .environmentObject(users)
+        
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
