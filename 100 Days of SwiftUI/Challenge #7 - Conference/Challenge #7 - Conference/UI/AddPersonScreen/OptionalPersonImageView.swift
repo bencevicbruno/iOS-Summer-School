@@ -8,28 +8,33 @@
 import SwiftUI
 
 struct OptionalPersonImageView: View {
-    @State var image: UIImage?
+    @Binding var image: UIImage?
     
     var body: some View {
-        if image == nil {
-            Image(systemName: "person.crop.circle.badge.plus")
-                .resizable()
-                .scaledToFit()
-                .padding()
-        } else {
-            Image(uiImage: image!)
-                .resizable()
-                .scaledToFit()
-                .clipShape(RoundedRectangle(cornerRadius: 10))
-                .shadow(radius: 10)
-                .padding()
+        GeometryReader { geo in
+            if image == nil {
+                Image(systemName: "person.crop.circle.badge.plus")
+                    .resizable()
+                    .scaledToFit()
+                    .padding()
+                    .frame(width: geo.size.width, height: geo.size.height)
+                   
+            } else {
+                Image(uiImage: image!)
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .shadow(radius: 10)
+                    .padding()
+                    .frame(width: geo.size.width, height: geo.size.height)
+            }
         }
     }
 }
 
 struct OptionalPersonImageView_Previews: PreviewProvider {
     static var previews: some View {
-        OptionalPersonImageView()
-        OptionalPersonImageView(image: UIImage(systemName: "pencil"))
+        OptionalPersonImageView(image: .constant(UIImage(systemName: "pencil")!))
+        OptionalPersonImageView(image: .constant(nil))
     }
 }

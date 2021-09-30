@@ -14,7 +14,7 @@ struct PersonDetailView: View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: [.white, .white, Color(red: 0.9, green: 0.6, blue: 0.4)]), startPoint: .top, endPoint: .bottom)
             
-            VStack(spacing: 20) {
+            VStack(alignment: .center, spacing: 20) {
                 Image(uiImage: person.image)
                     .resizable()
                     .frame(width: 200, height: 200)
@@ -27,14 +27,6 @@ struct PersonDetailView: View {
                 
                 Text(person.id.uuidString)
                     .font(Font.system(size: 10))
-                
-                Spacer()
-                
-                Button("Remove") {
-                    print("Remove pressed")
-                }
-                
-                Spacer()
             }
         }
     }

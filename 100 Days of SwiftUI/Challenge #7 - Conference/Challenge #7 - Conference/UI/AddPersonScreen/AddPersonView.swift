@@ -8,14 +8,26 @@
 import SwiftUI
 
 struct AddPersonView: View {
+    @Environment(\.presentationMode) var presentationMode
+    
+    var onAddPersonTapped: ((Person) -> Void)?
+    
     @State private var image: UIImage?
     @State private var firstName = ""
     @State private var lastName = ""
     
+    @State private var showingImagePickerSheet = false
+    
     var body: some View {
         Form {
             HStack(alignment: .center) {
-                OptionalPersonImageView(image: image)
+                Spacer()
+                
+                OptionalPersonImageView(image: $image)
+                    .frame(width: 200, height: 200)
+                    .onTapGesture(perform: openImagePicker)
+                
+                Spacer()
             }
             
             Section(header: Text("Info")) {
@@ -25,7 +37,10 @@ struct AddPersonView: View {
             }
             
             Button {
-                print("Trying to add a person!")
+                let person = Person(firstName: self.firstName, lastName: self.lastName, image: image ?? UIImage(systemName: "questionmark.circle")!)
+                
+                self.onAddPersonTapped?(person)
+                self.presentationMode.wrappedValue.dismiss()
             } label: {
                 Text("Add")
                     .foregroundColor(.white)
@@ -36,11 +51,20 @@ struct AddPersonView: View {
             }
             .disabled(!canAddPerson)
         }
+        .sheet(isPresented: $showingImagePickerSheet, content: {
+            ImagePickerView() { pickedImage in
+                self.image = pickedImage
+            }
+        })
     }
     
     var canAddPerson: Bool {
         !firstName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
             && !lastName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+    }
+    
+    func openImagePicker() {
+        self.showingImagePickerSheet = true
     }
 }
 

@@ -22,6 +22,7 @@
 		1539E4852704785F005A717F /* PersonCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1539E4842704785F005A717F /* PersonCellView.swift */; };
 		1539E48927047CAD005A717F /* AddPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1539E48827047CAD005A717F /* AddPersonView.swift */; };
 		1539E48B27047DAC005A717F /* OptionalPersonImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1539E48A27047DAC005A717F /* OptionalPersonImageView.swift */; };
+		1539E48D2705CE9C005A717F /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1539E48C2705CE9C005A717F /* ImagePickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		1539E4842704785F005A717F /* PersonCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCellView.swift; sourceTree = "<group>"; };
 		1539E48827047CAD005A717F /* AddPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonView.swift; sourceTree = "<group>"; };
 		1539E48A27047DAC005A717F /* OptionalPersonImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalPersonImageView.swift; sourceTree = "<group>"; };
+		1539E48C2705CE9C005A717F /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			children = (
 				1539E48827047CAD005A717F /* AddPersonView.swift */,
 				1539E48A27047DAC005A717F /* OptionalPersonImageView.swift */,
+				1539E48C2705CE9C005A717F /* ImagePickerView.swift */,
 			);
 			path = AddPersonScreen;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				1539E48927047CAD005A717F /* AddPersonView.swift in Sources */,
 				1539E4752704594B005A717F /* PersonDetailView.swift in Sources */,
 				1539E47927045A64005A717F /* LocalDataService.swift in Sources */,
+				1539E48D2705CE9C005A717F /* ImagePickerView.swift in Sources */,
 				1539E47B27045A8F005A717F /* TypeAliases.swift in Sources */,
 				1539E4652704592D005A717F /* MainView.swift in Sources */,
 				1539E483270475D1005A717F /* PlusView.swift in Sources */,

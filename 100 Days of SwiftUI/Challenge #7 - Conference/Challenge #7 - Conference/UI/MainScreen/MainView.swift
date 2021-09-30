@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    let people = [Person.test(), Person.test(), Person.test()]
+    @State var people = [Person]()
     
     @State private var showingAddPersonSheet = false
+    
+    let dataService = LocalDataService()
     
     var body: some View {
         NavigationView {
@@ -32,7 +34,6 @@ struct ContentView: View {
                         Spacer()
                         
                         PlusView {
-                            print("Plus tapped")
                             self.showingAddPersonSheet = true
                         }
                     }
@@ -41,8 +42,26 @@ struct ContentView: View {
             }
             .navigationBarTitle("Conference")
             .sheet(isPresented: $showingAddPersonSheet, content: {
-                AddPersonView()
+                AddPersonView(onAddPersonTapped: addNewPerson)
             })
+        }
+        .onAppear(perform: loadPeople)
+    }
+    
+    func loadPeople() {
+        dataService.loadData { loadedPeople in
+            people = loadedPeople
+        } onFail: { errorMessage in
+            print(errorMessage)
+        }
+    }
+    
+    func addNewPerson(newPerson: Person) {
+        people.append(newPerson)
+        people.sort()
+        
+        dataService.saveData(people) { errorMessage in
+            print(errorMessage)
         }
     }
 }
