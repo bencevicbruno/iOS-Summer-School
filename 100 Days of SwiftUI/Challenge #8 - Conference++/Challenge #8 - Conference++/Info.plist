@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Gib me camera access or u gettin th vaccin and im snithin u to bil gejc and mark zucc</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Gib me ur location or ur gettin th vaccine and im snitcing u to stiv jobs and mark zucc</string>
 	<key>CFBundleDevelopmentRegion</key>

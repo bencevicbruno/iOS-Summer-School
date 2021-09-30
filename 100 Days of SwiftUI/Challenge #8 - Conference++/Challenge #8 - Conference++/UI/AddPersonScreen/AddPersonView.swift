@@ -65,7 +65,7 @@ struct AddPersonView: View {
             }
             
             Button {
-                var person = Person(firstName: self.firstName, lastName: self.lastName, image: image ?? UIImage(systemName: "questionmark.circle")!)
+                let person = Person(firstName: self.firstName, lastName: self.lastName, image: image ?? UIImage(systemName: "questionmark.circle")!)
                 person.latitude = conferenceLocationCoordinates.latitude
                 person.longitude = conferenceLocationCoordinates.longitude
                 
