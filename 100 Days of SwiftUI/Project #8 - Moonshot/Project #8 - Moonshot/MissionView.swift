@@ -38,12 +38,17 @@ struct MissionView: View {
     var body: some View {
         GeometryReader { geometry in
             ScrollView(.vertical) {
-                VStack {
-                    Image(self.mission.image)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(maxWidth: geometry.size.width * 0.7)
-                        .padding(.top)
+                VStack(alignment: .center) {
+                    HStack(alignment: .center) {
+                        GeometryReader { imageGeo in
+                            Image(self.mission.image)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(maxWidth: geometry.size.width * 0.7)
+                                .padding(.top)
+                                .scaleEffect(abs(imageGeo.frame(in: .global).maxY / geometry.size.height))
+                        }
+                    }
                     
                     Text(self.mission.description)
                         .padding()

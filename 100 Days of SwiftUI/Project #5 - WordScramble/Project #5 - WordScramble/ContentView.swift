@@ -29,9 +29,15 @@ struct ContentView: View {
                         .autocapitalization(.none)
                         .padding()
                     
-                    List(usedWords, id: \.self) {
-                        Image(systemName: "\($0.count).circle")
-                        Text($0)
+                    List(0..<usedWords.count) { index in
+                        GeometryReader { rowGeo in
+                            HStack {
+                                Image(systemName: "\(usedWords[index].count).circle")
+                                Text(usedWords[index])
+                            }
+                            .foregroundColor(Color(red: 0.0, green: 0.0, blue: 1.0 / Double(index + 1)))
+                            .offset(x: max(rowGeo.frame(in: .global).maxY / rowGeo.frame(in: .local).maxY - 10, 0), y: 0)
+                        }
                     }
                     
                     Text("Score: \(ContentView.score)")
@@ -50,10 +56,10 @@ struct ContentView: View {
         let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
         
         guard answer.count > 0
-            && isLongEnough(word: answer)
-            && isOriginal(word: answer)
-            && isPossible(word: answer)
-            && isPossible(word: answer)
+                && isLongEnough(word: answer)
+                && isOriginal(word: answer)
+                && isPossible(word: answer)
+                && isPossible(word: answer)
         else {
             return
         }
@@ -95,6 +101,7 @@ struct ContentView: View {
     
     func startGame() {
         usedWords.removeAll()
+        usedWords = [String](repeating: "test", count: 10)
         newWord = ""
         
         if let startWordsURL = Bundle.main.url(forResource: "start", withExtension: "txt") {
